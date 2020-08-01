@@ -17,3 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('mhs', 'MahasiswaController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
